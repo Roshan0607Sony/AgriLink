@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Dashboard - AgriLink</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+  <div class="header">
+    <h1>👨‍🌾 Farmer Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <div class="container">
+    <h2>Add Your Product</h2>
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="text" id="productDesc" placeholder="Description" required>
+      <input type="number" id="productPrice" placeholder="Price (₹)" required>
+      <input type="file" id="qrUpload" accept="image/*" required>
+
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+
+  <div class="product-list" id="productList">
+    <h2>Your Products</h2>
+  </div>
+
+  <script src="farmer.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Dashboard - AgriLink</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👨‍🌾 Farmer Dashboard</h1>
+
+    <form id="addProductForm">
+      <input type="text" id="pname" placeholder="Product Name" required>
+      <input type="text" id="pdesc" placeholder="Description" required>
+      <input type="number" id="pprice" placeholder="Price (₹)" required>
+      <label>Upload QR Code:</label>
+      <input type="file" id="qrUpload" accept="image/*" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div id="productList" class="product-list">
+      <h2>Your Products</h2>
+    </div>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="farmer.js"></script>
+</body>
+</html>

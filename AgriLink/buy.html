@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Product - AgriLink</title>
+  <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧾 Confirm Your Purchase</h1>
+    <div class="product-info" id="productInfo"></div>
+
+    <form id="buyForm">
+      <input type="text" id="custName" placeholder="Your Name" required>
+      <input type="text" id="custAddress" placeholder="Delivery Address" required>
+      <input type="number" id="custQty" placeholder="Quantity" required min="1">
+
+      <button type="submit" id="proceedBtn">Proceed to Payment</button>
+    </form>
+
+    <button id="backBtn">← Back to Products</button>
+  </div>
+
+  <script src="buy.js"></script>
+</body>
+</html>
