@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Dashboard - AgriLink</title>
+  <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌾 AgriLink - Farmer Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="add-product">
+      <h2>Add Your Product</h2>
+      <input type="text" id="productName" placeholder="Product Name">
+      <input type="number" id="productPrice" placeholder="Price (₹)">
+      <textarea id="productDesc" placeholder="Short Description"></textarea>
+      <button id="addBtn">Add Product</button>
+    </section>
+
+    <section class="product-list">
+      <h2>Your Products</h2>
+      <ul id="productList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <button id="logoutBtn">Logout</button>
+  </footer>
+
+  <script src="farmer.js"></script>
+</body>
+</html>
