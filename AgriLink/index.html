@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriLink - Connecting Farmers to Markets (Mockup)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">AgriLink</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#market">Marketplace</a>
+      <a href="#farmer">Farmer Panel</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="openLogin" class="btn" style="margin-left:8px">Login</button>
+    </nav>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero card">
+      <div>
+        <h1>AgriLink: Connecting Farmers to Markets</h1>
+        <p>A simple mock-up to show how farmers can reduce waste and sell directly. No backend — front-end prototype with HTML, CSS and JS.</p>
+        <div style="margin-top:10px">
+          <button class="btn" onclick="scrollToSection('market')">View Marketplace</button>
+          <button class="btn secondary" onclick="scrollToSection('farmer')">Farmer Panel</button>
+        </div>
+      </div>
+      <div style="max-width:360px;text-align:right">
+        <img alt="AgriLink illustration" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='160'><rect rx='12' width='100%' height='100%' fill='%23e8faf1'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='20' fill='%233b7d45'>AgriLink</text></svg>" style="border-radius:8px;max-width:100%"/>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2 id="market">Marketplace</h2>
+        <p class="small">Sample listings — click "Contact" to view farmer details (mock).</p>
+        <div id="products" class="products" aria-live="polite"></div>
+      </section>
+
+      <aside class="card" id="farmer">
+        <h3>Farmer Panel (Mock)</h3>
+        <p class="small">Add a product to preview how it will appear in the marketplace.</p>
+        <form id="addProductForm">
+          <label for="pname">Product name</label>
+          <input id="pname" placeholder="e.g. Tomatoes" required />
+
+          <label for="pqty">Quantity (kg)</label>
+          <input id="pqty" type="number" min="1" value="10" required />
+
+          <label for="pprice">Price per kg (₹)</label>
+          <input id="pprice" type="number" min="1" value="30" required />
+
+          <label for="ptype">Type</label>
+          <select id="ptype"><option>Vegetable</option><option>Fruit</option><option>Grain</option><option>Other</option></select>
+
+          <button class="btn" style="margin-top:12px" type="submit">Preview Product</button>
+        </form>
+
+        <div style="margin-top:12px">
+          <button class="btn secondary" id="clearList">Clear Preview</button>
+        </div>
+
+        <hr style="margin:12px 0">
+        <h4>Farmer Help</h4>
+        <p class="small">If a farmer cannot use a phone, a village volunteer can add products here and help sell.</p>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:18px" id="about">
+      <h2>About AgriLink</h2>
+      <p class="small">AgriLink is a prototype that shows how simple tools can reduce post-harvest loss and help farmers reach buyers directly. This mock-up is front-end only — it simulates product listings, contact flow and simple payments for demonstration.</p>
+    </section>
+
+    <section class="card" style="margin-top:12px" id="contact">
+      <h2>Contact / Feedback</h2>
+      <form id="contactForm">
+        <label for="cname">Name</label>
+        <input id="cname" required />
+        <label for="cemail">Email</label>
+        <input id="cemail" type="email" required />
+        <label for="cmsg">Message</label>
+        <textarea id="cmsg" rows="3" required></textarea>
+        <div style="margin-top:10px">
+          <button class="btn" type="submit">Send Feedback</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      AgriLink mockup — Front-end prototype for school project. No backend required.
+    </footer>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true">
+    <div class="sheet card">
+      <div id="modalContent"></div>
+      <div style="text-align:right;margin-top:12px">
+        <button class="btn secondary" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal" role="dialog" aria-modal="true">
+    <div class="sheet card">
+      <h3>Mock Login</h3>
+      <p class="small">Enter any name to continue as a farmer (mock only).</p>
+      <label for="loginName">Name</label>
+      <input id="loginName" />
+      <div style="margin-top:12px;text-align:right">
+        <button class="btn" onclick="doLogin()">Continue</button>
+        <button class="btn secondary" onclick="closeLogin()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
