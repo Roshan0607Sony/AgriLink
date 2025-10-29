@@ -1,0 +1,46 @@
+
+
+body {
+  background-color: #f3fdf5;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+.payment-methods {
+  margin: 20px 0;
+}
+
+.qr-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #256628;
+}
