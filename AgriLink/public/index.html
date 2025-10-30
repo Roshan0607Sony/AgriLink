@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriLink - Login</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="role-selection" id="roleSelection">
+    <h1>Welcome to AgriLink</h1>
+    <p>Are you a Customer or a Farmer?</p>
+    <div class="btns">
+      <button id="customerBtn">Customer</button>
+      <button id="farmerBtn">Farmer</button>
+    </div>
+  </div>
+
+  <div class="auth-box hidden" id="authBox">
+    <h2 id="roleTitle"></h2>
+    <div class="box active" id="login-box">
+      <h3>Login</h3>
+      <input type="email" placeholder="Enter Gmail">
+      <input type="password" placeholder="Enter Password">
+      <button id="loginBtn">Login</button>
+      <p>Don't have an account? <span id="showSignup">Sign Up</span></p>
+    </div>
+
+    <div class="box" id="signup-box">
+      <h3>Sign Up</h3>
+      <input type="email" placeholder="Enter Gmail">
+      <input type="password" placeholder="Create Password">
+      <button id="signupBtn">Sign Up</button>
+      <p>Already have an account? <span id="showLogin">Login</span></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
